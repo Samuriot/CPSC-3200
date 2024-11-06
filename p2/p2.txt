@@ -1,0 +1,48 @@
+CPSC 3200 Object-Oriented Development
+Programming Assignment #2
+P2 exercises your understanding of composition, ownership and C++ copy semantics
+
+Part  I: Class Design
+Re-write the MsgStream class in C++, the type definition of MsgStream is the same as in P1
+
+Create a PartitionStream class composed of MsgStream objects,
+where each MsgStream object is associated with its own partition key.
+Clients now read and write (add a message) to a PartitionStream object but must specify a partition key
+when doing so in order to (internally) direct the read/write request.
+Students must decide what partition keys look like and what to do when given invalid partition keys.
+As in P1, the class designer must determine appropriate responses when an encapsulated MsgStream object
+reaches capacity and/or the limit of the number of performed operations.
+PartitionStream objects may be reset; the functionality of reset is left to the class designer
+(though it is recommended that reset not be triggered internally based on the state of only one MsgStream object).
+
+Use dependency injection to provide an initial sequence of MsgStream objects.
+The PartitionStream class must properly implement C++ copy and move semantics.
+The PartitionStream copy constructor and copy assignment operator should support deep copying
+of all internal MsgStream objects so that no unintended aliasing occurs: e.g. after copying PartitionStream object x,
+any actions on object x should not affect any copy of x.
+The PartitionStream class must implement a destructor to appropriately dispose of owned resources.
+
+Each PartitionStream object encapsulates some number of distinct MsgStream objects,
+with addition and internal management of MsgStream objects supported as noted above.
+Thus, the cardinality of MsgStream subobjects varies across PartitionStream objects.
+Do NOT design with excessive capacity; use heap memory. You decide what, if any, additional public functionality
+to provide, remember that exposure should be minimized and queries should not affect state.
+
+Many details are missing.
+You MUST make and DOCUMENT your design decisions
+Do NOT tie your type definition to the Console.
+
+Part II: Driver  (P2.cpp) -- External Perspective of Client – tests your class design
+Fulfill the testing requirements by using a collection (array) of PartitionStream objects,
+where each array entry is a distinct object, initially set in a distinct state.
+Do NOT use cin in your driver
+No manual input should be needed to run your program.
+Unit testing is not required or expected.
+Demonstrate copying of PartitionStream objects via call by value and assignment
+
+1.	use C++:  CLion will be used to compile submissions
+a.	Submissions that do not compile will NOT receive credit
+b.	programs developed in Visual Studio often do NOT compile; do NOT use VS
+2.	upload all .h and .cpp files to Canvas  (no zip files AND do not use .hpp)
+3.	design using heap memory, composition, and move semantics
+
