@@ -1,0 +1,15 @@
+/Users/jomikaelruiz/RiderProjects/Project3/P3/bin/Debug/net7.0/P3
+/Users/jomikaelruiz/RiderProjects/Project3/P3/bin/Debug/net7.0/P3.deps.json
+/Users/jomikaelruiz/RiderProjects/Project3/P3/bin/Debug/net7.0/P3.runtimeconfig.json
+/Users/jomikaelruiz/RiderProjects/Project3/P3/bin/Debug/net7.0/P3.dll
+/Users/jomikaelruiz/RiderProjects/Project3/P3/bin/Debug/net7.0/P3.pdb
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.csproj.AssemblyReference.cache
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.AssemblyInfoInputs.cache
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.AssemblyInfo.cs
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.csproj.CoreCompileInputs.cache
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.dll
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/refint/P3.dll
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.pdb
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/P3.genruntimeconfig.cache
+/Users/jomikaelruiz/RiderProjects/Project3/P3/obj/Debug/net7.0/ref/P3.dll
